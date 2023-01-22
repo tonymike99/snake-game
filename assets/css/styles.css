@@ -1,0 +1,44 @@
+:root {
+  --NUMBER-OF-GRID-ROWS: 30;
+  --NUMBER-OF-GRID-COLUMNS: 20;
+}
+
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#game-board {
+  width: 100vmin;
+  height: 100vmin;
+  background-color: aliceblue;
+  display: grid;
+  grid-template-rows: repeat(var(--NUMBER-OF-GRID-ROWS), 1fr);
+  grid-template-columns: repeat(var(--NUMBER-OF-GRID-COLUMNS), 1fr);
+}
+
+.snake-head {
+  background-color: green;
+  border: 1px solid black;
+  background-image: url("https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/68113/snake-face-clipart-xl.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.snake-body {
+  background-color: green;
+  border: 1px solid black;
+}
+
+.food {
+  background-image: url("https://cdn.pixabay.com/photo/2019/02/19/00/35/graphic-4005852_960_720.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
