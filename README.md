@@ -1,3 +1,5 @@
+# snake-game
+
 Nokia Snake
 
 Your mission, should you choose to accept it, is to build a snake game. Use anything you need. Give it your own style. Share the link to the code in a public git repository along with a demo link where the project is hosted online.
