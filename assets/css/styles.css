@@ -18,10 +18,23 @@ body {
   width: 99%;
   height: 99%;
   background-color: cyan;
-  border: 2px solid black;
   display: grid;
   grid-template-rows: repeat(var(--NUMBER-OF-GRID-ROWS), 1fr);
   grid-template-columns: repeat(var(--NUMBER-OF-GRID-COLUMNS), 1fr);
+  width: 50%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+  #game-board {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  #game-board {
+    width: 100%;
+  }
 }
 
 .snake-head {
